@@ -2447,6 +2447,7 @@ return array(
     'Laravel\\Sail\\SailServiceProvider' => $vendorDir . '/laravel/sail/src/SailServiceProvider.php',
     'Laravel\\Sanctum\\Contracts\\HasAbilities' => $vendorDir . '/laravel/sanctum/src/Contracts/HasAbilities.php',
     'Laravel\\Sanctum\\Contracts\\HasApiTokens' => $vendorDir . '/laravel/sanctum/src/Contracts/HasApiTokens.php',
+    'Laravel\\Sanctum\\Events\\TokenAuthenticated' => $vendorDir . '/laravel/sanctum/src/Events/TokenAuthenticated.php',
     'Laravel\\Sanctum\\Exceptions\\MissingAbilityException' => $vendorDir . '/laravel/sanctum/src/Exceptions/MissingAbilityException.php',
     'Laravel\\Sanctum\\Exceptions\\MissingScopeException' => $vendorDir . '/laravel/sanctum/src/Exceptions/MissingScopeException.php',
     'Laravel\\Sanctum\\Guard' => $vendorDir . '/laravel/sanctum/src/Guard.php',
