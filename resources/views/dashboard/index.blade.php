@@ -8,7 +8,7 @@
 @stop
 
 @section('content')
-    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 		
 		<!-- imagenes -->
 		<div class="carousel-inner">
@@ -50,8 +50,8 @@
 
 		<!-- boton siguiente -->
 		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Next</span>
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 		</button>
 
 	</div>
@@ -81,18 +81,26 @@
 		      object-position: center center;
 		    }
 		}
+
+	.carousel-control-prev,  .carousel-control-next{
+    	    width: 145px;
+	    background-color: #3d4144;
+	    opacity: inherit;
+	    border-style: none!important;
+	}
+	
 	</style>
 	<!-- integramos boostrap 5.0.2 cdn-->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 @stop
 
 @section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
+    <!-- <link rel="stylesheet" href="/css/admin_custom.css"> -->
 @stop
 
 @section('js')
-    <script> console.log('Hi!'); </script>
+    <!-- <script> console.log('Hi!'); </script> -->
 @stop
 
 
