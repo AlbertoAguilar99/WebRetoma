@@ -14,11 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard/index');
+})->name('dashboard');
 
-Route::get('Hola', function () {
-    return view('holMundo');
+Route::get('/dashboard/properties',function(){
+    return view('properties.index');
 });
 
+Route::get('/dashboard/properties/create',function(){
+    return view('properties.create');
+});
